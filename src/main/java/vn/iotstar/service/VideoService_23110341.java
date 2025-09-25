@@ -10,4 +10,5 @@ public interface VideoService_23110341 {
     void create(Videos_23110341 v);
     void update(Videos_23110341 v);
     void delete(String id);
+    List<Videos_23110341> findAll();
 }

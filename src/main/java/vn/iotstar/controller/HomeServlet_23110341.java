@@ -5,7 +5,7 @@ import jakarta.servlet.http.*;
 import jakarta.servlet.*;
 import java.io.IOException;
 
-@WebServlet(urlPatterns = {"/", "/home"})
+@WebServlet(urlPatterns = {"/home"})
 public class HomeServlet_23110341 extends HttpServlet {
     /**
 	 * 
