@@ -13,7 +13,15 @@
 
     <h3>${cat.categoryname} (${count})</h3>
     <table width="100%" border="1" cellspacing="0" cellpadding="6">
-      <tr><th>Poster</th><th>Tiêu đề</th><th>Mã video</th><th>Category</th><th>View</th><th>Chi tiết</th></tr>
+      <tr>
+        <th>Poster</th>
+        <th>Tiêu đề</th>
+        <th>Mã video</th>
+        <th>Category</th>
+        <th>View</th>
+        <th>Like</th>
+        <th>Share</th>
+      </tr>
       <c:forEach var="v" items="${cat.videos}">
         <tr>
           <td>[poster] ${v.poster}</td>
@@ -21,7 +29,8 @@
           <td>${v.videoId}</td>
           <td>${cat.categoryname}</td>
           <td>${v.views}</td>
-          <td><a href="${pageContext.request.contextPath}/video/detail?id=${v.videoId}">Xem</a></td>
+          <td>${statDao.likesOf(v.videoId)}</td>   <!-- Gọi trực tiếp -->
+          <td>${statDao.sharesOf(v.videoId)}</td>  <!-- Gọi trực tiếp -->
         </tr>
       </c:forEach>
     </table>

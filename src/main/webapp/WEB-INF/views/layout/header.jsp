@@ -3,9 +3,7 @@
 <header style="border-bottom: 1px solid #ddd; padding: 10px 0">
 	<nav
 		style="max-width: 1100px; margin: auto; display: flex; gap: 14px; align-items: center">
-		<a href="${pageContext.request.contextPath}/"
-			style="font-weight: bold">VideoPortal</a> <a
-			href="${pageContext.request.contextPath}/home">Trang chủ</a> <a
+		<a href="${pageContext.request.contextPath}/home">Trang chủ</a> <a
 			href="${pageContext.request.contextPath}/product">Sản phẩm</a>
 
 		<c:choose>

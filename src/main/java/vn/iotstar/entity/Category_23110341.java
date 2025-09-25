@@ -23,7 +23,7 @@ public class Category_23110341 {
     @Column(name = "Status")
     private Boolean status;
 
-    @OneToMany(mappedBy = "category")
+    @OneToMany(mappedBy = "category", fetch = FetchType.EAGER)
     private List<Videos_23110341> videos;
 
     // getters/setters

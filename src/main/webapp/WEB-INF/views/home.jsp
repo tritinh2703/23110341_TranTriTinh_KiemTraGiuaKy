@@ -6,7 +6,7 @@
 <body>
 <main style="max-width:1100px;margin:20px auto;padding:0 16px">
   <h1>Trang chủ</h1>
-  <p>Chào mừng bạn đến với Video Portal.</p>
+  <p>Chào mừng!</p>
   <p>Vào <a href="${pageContext.request.contextPath}/categories">Thể loại</a> để xem video theo Category.</p>
 </main>
 </body>
